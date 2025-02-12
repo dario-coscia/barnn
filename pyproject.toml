@@ -1,0 +1,21 @@
+# Choosing a build backend:
+requires = ["setuptools"]
+build-backend = "setuptools.build_meta"
+
+
+[project]
+name = "barnn"
+version = "0.0.1"
+description = "INSERT"
+readme = "README.md"
+requires-python = ">=3.9"
+license = { file = "LICENSE" }
+authors = [{ name = "Dario Coscia", email = "dariocos99@gmail.com" }]
+dynamic = ["dependencies"]
+
+[tool.setuptools.packages.find]
+where = ["."]
+exclude = ["scripts", "shell"]
+
+[tool.setuptools.dynamic]
+dependencies = { file = ["requirements.txt"] }
