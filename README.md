@@ -86,7 +86,7 @@ barnn_module = BARNNLanguageModel.load_from_checkpoint(
                     tokenizer=dm.tokenizer)
     )
 ```
-You can use the loaded module to sample molecules by `barnn_module.sample(batch_size=30, temperature=1)`, which samples $30$ molecules using temperature=$1$.
+You can use the loaded module to sample molecules by `barnn_module.sample(batch_size=30, temperature=1)`, which samples 30 molecules using temperature=1.
 
 **Test the model by**:
 ```shell
